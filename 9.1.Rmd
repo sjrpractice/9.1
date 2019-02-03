@@ -16,4 +16,6 @@ my_map <- my_map %>%
   addMarkers(lat=38.897957, lng=-77.036560, 
              popup="The White House")
 my_map
+library(htmlwidgets)
+saveWidget(my_map, file="my_map.html")
 ```
