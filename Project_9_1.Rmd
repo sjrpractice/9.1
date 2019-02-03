@@ -1,0 +1,23 @@
+---
+title: "Project 9.1"
+author: "Steve"
+date: "February 3, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## The White House
+
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng = -77.036560, lat = 38.897957, popup = "The White House")
+
+m  # Print the map
+```
+
